@@ -156,3 +156,19 @@ code: {
         }
       },
 ```
+
+     <!-- 这里使用的是阿里的远程maven镜像，目前国内大多数都使用它 -->
+	  <mirror>
+     <id>nexus-aliyun</id>
+     <mirrorOf>*,!jeecg,!jeecg-snapshots</mirrorOf>
+     <name>Nexus aliyun</name>
+     <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </mirror> 
+    
+    <mirror>
+     <id>jeecgframework</id>
+     <mirrorOf>*</mirrorOf>
+     <name>jeecgframework</name>
+     <url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
+    </mirror>
+  </mirrors>
